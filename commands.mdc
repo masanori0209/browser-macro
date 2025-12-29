@@ -1,0 +1,8 @@
+# 開発用コンテナ操作（docker-compose 利用）
+
+- 依存関係インストール: `docker-compose run --rm dev npm install`
+- ビルド: `docker-compose run --rm dev npm run build`
+- ビルド監視（手動テストを楽に）: `docker-compose run --rm dev npm run build:watch`
+- シェルで開発: `docker-compose run --rm dev bash`
+- テスト: `docker-compose run --rm dev npm test`
+- テスト監視: `docker-compose run --rm dev npm run test:watch`

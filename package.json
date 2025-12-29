@@ -1,0 +1,30 @@
+{
+  "name": "flowmacro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FlowMacro: Chrome extension (Manifest V3) for recording and running browser macros.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:watch": "WATCH=1 node scripts/build.js",
+    "lint": "echo \"lint not configured\"",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/chrome": "^0.0.269",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "esbuild": "^0.24.0",
+    "happy-dom": "^15.11.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.1"
+  }
+}
